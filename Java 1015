@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    float xpontoA = teclado.nextFloat();
+	    float ypontoA = teclado.nextFloat();
+	    float xpontoB = teclado.nextFloat();
+	    float ypontoB = teclado.nextFloat();
+	    
+	    float distancia = Math.sqrt(Math.pow(xpontoA - xpontoB) + Math.pow(ypontoA - ypontoB));
+	    
+		System.out.printf("%.4f\n", distancia);
+		
+		teclado.close();
+	}
+}
